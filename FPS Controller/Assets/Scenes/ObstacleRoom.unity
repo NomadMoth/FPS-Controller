@@ -278,7 +278,7 @@ MonoBehaviour:
   fpsCam: {fileID: 963194227}
   muzzleFlash: {fileID: 299273141}
   impactEffect: {fileID: 6156593624089072647, guid: cbee6befe6fd5784693a4d6d62c5203a, type: 3}
-  animator: {fileID: 0}
+  animator: {fileID: 89630763}
 --- !u!65 &23253875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11149,7 +11149,7 @@ MonoBehaviour:
   fpsCam: {fileID: 963194227}
   muzzleFlash: {fileID: 108460648}
   impactEffect: {fileID: 6156593624089072647, guid: cbee6befe6fd5784693a4d6d62c5203a, type: 3}
-  animator: {fileID: 0}
+  animator: {fileID: 89630763}
 --- !u!65 &465995829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12637,6 +12637,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -12724,6 +12725,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 2000
   playerBody: {fileID: 1893447095}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d692bc14b088a204bb2ffc854d24d434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normal: 60
+  zoom: 20
+  smooth: 5
 --- !u!1 &968384759
 GameObject:
   m_ObjectHideFlags: 0
