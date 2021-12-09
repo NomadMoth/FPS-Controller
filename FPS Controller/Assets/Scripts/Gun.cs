@@ -6,6 +6,7 @@ public class Gun : MonoBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
+    public float impactForce = 30f;
 
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
@@ -36,7 +37,12 @@ public class Gun : MonoBehaviour
             }
         }
 
-        Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-        
+        if (hit.rigidbody != null)
+        {
+            hit.rigidbody.AddForce(-hit.normal * impactForce);
+        }
+
+        GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+        Destroy(impactGO, 1f);
     }
 }
