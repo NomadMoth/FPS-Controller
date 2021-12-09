@@ -12740,6 +12740,7 @@ MonoBehaviour:
   normal: 60
   zoom: 20
   smooth: 5
+  animator: {fileID: 89630763}
 --- !u!1 &968384759
 GameObject:
   m_ObjectHideFlags: 0

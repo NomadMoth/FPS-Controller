@@ -10,6 +10,8 @@ public class CameraZoom : MonoBehaviour
 
     bool isZoomed = false;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +27,12 @@ public class CameraZoom : MonoBehaviour
         }
         if (isZoomed)
         {
+            animator.SetBool("isAiming", true);
             GetComponent<Camera>().fieldOfView = Mathf.Lerp(GetComponent<Camera>().fieldOfView, zoom, Time.deltaTime * smooth);
         }
         else
         {
+            animator.SetBool("isAiming", false);
             GetComponent<Camera>().fieldOfView = Mathf.Lerp(GetComponent<Camera>().fieldOfView, normal, Time.deltaTime * smooth);
         }
     }
