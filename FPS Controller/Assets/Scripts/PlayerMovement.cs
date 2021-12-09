@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 12f;
     public float gravity = -9f;
     public float jumpHeight = 3f;
+    public float sprintSpeed = 18f;
 
     Vector3 velocity;
 
